@@ -21,7 +21,7 @@ pipeline {
       steps {
         copyArtifacts projectName: '../helloworld-api/development'
         gateConsumesArtifact file: 'application.sh'
-      }
+              }
     }
     stage('Deploy') {
       when {
